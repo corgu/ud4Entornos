@@ -2,4 +2,8 @@ dfhfdh
 df
 hdf
 h
+<<<<<<< HEAD
 master
+=======
+hola
+>>>>>>> develop
