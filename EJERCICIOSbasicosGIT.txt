@@ -1,0 +1,45 @@
+Ejercicios básicos de GIT
+    Crea una carpeta en tu equipo.
+mkdir carpetacoral
+    Inicia en la carpeta anterior un repositorio de git.
+cd carpetacoral	git init
+    Añade 5 ficheros de texto: ciudades europeas, ciudades americanas, provincias españolas, paises de la UE, paises fuera de la UE.
+añadidos desde la misma carpeta	
+    Añade contenido en todos los ficheros anteriores y haz commit.
+git commit -m "carpeta creada"
+git push corgu master
+    Crea otra rama (llámala develop por ejemplo) y cámbiate a ella.
+git checkout -b develop
+    Añade contenido en los ficheros del repositorio y haz commit.
+ git add .
+git commit -m "he añadido hola"
+    Vuelve a la rama anterior (master) y añade más contenido a los ficheros.
+(observamos que no está lo que he añadido con otra rama)
+git checkout master
+    Fusiona (merge) las ramas que tienes. Si aparecen conflictos, resuélvelos. ¿Qué has visto en los ficheros del repositorio?
+ git merge develop
+(observamos que aparece el conflicto, hay que hacer commit)
+git add .
+git commit -m "añadido nombre master"
+    Crea un tag o etiqueta de la versión fusionada.
+git tag cdad812ffbe46d85cd12d0c60a6c20bc4e378668
+    Sube a tu cuenta de github el repositorio. Deberás primero crear un repositorio vacío (sin ficheros) en tu cuenta de github y seguir las instrucciones de la página
+(Hacerlo desde la misma pagina de github y copio la instruccion de en medio)
+git remote add origin https://github.com/corgu/ud4Entornos.git
+git push -u origin master
+    Añade un fichero .gitignore a tu repositorio que tenga en cuenta que tu repositorio se va a manejar desde windows y en él se deberían ignorar los ficheros propios de windows, así como .pdf y .doc
+(Con la pagina de gitignore.io, poner archive, xopiar el texto que nos muestra y pegarlo en el nuevo archivo del repositorio)
+    Copia en la carpeta de tu repositorio un documento de word y un pdf.
+    Haz commit y push del contenido del repositorio. ¿Qué ha ocurrido?
+(No deja)
+    Investiga los comandos de git: log, diff y status. ¿Qué hacen?
+git log:Obtener el codigo id del commit
+git diff:Revisar cambios antes de fusionarlos.
+git status:Muestra todos estados de los archivos de tu directorio
+    Pon en un fichero de texto los comandos de git que has introducido en cada ejercicio junto con las respuestas a las cuestiones que se plantean y añádelo a tu repositorio. Haz commit, push y envíame el enlace por email.
+ cd /c/Users/IFC/Desktop/entornos/segundaeva
+git init
+git add .
+git commit -m "Subo archivo de ejercicios"
+git push origin master
+
